@@ -1,5 +1,6 @@
 
 //ECMAScript 2015 (ES6) é uma padronização da alinguagem javascript, DE ALGUM RECURSO QUE FOI INTRODUZIDO NA LINGUAGEM 
+// string, number, undefined, null, boolean, symbol
 const nome = 'luiz'; //string
 const nome1 = "luiz";//string
 const nome2 = `luiz`;//string
@@ -13,5 +14,12 @@ const aprovado = true; // valor boolean, aluno aprovado, se ele reprovou, eu col
 
 
 //se quiser ver o tipo ->
-
+ 
 console.log(typeof nome, nome)
+
+let a = 2;
+const b = a;
+console.log (a, b); // 2, 2
+//uma cópia 
+ a = 3
+console.log (a, b) // 3, 2
