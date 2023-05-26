@@ -1,7 +1,13 @@
 
 //ECMAScript 2015 (ES6) é uma padronização da alinguagem javascript, DE ALGUM RECURSO QUE FOI INTRODUZIDO NA LINGUAGEM 
-var nome = 'joão';
-var nome = 'otávio';
+const nome = 'luiz'; //string
+const nome1 = "luiz";//string
+const nome2 = `luiz`;//string
 
-//no var eu posso redelcar uma variável quando a gente utiliza VAR
-//não crie variáveis globais! -> nome = 'joão' sem especificar se é com var ou com lest, const
+const num1 = 10//number
+const num2 = 43.33//number
+
+let nomeAluno; // undefined -> não aponta para local nenhum da memória
+let sobrenomeAluno = null; // nulo -> não aponta para local nenhum na memroia, porem undefined e null são diferentes
+
+
