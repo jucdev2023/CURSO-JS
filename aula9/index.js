@@ -8,6 +8,10 @@ const num1 = 10//number
 const num2 = 43.33//number
 
 let nomeAluno; // undefined -> não aponta para local nenhum da memória
-let sobrenomeAluno = null; // nulo -> não aponta para local nenhum na memroia, porem undefined e null são diferentes
+const sobrenomeAluno = null; // nulo -> não aponta para local nenhum na memroia, porem undefined e null são diferentes
+const aprovado = true; // valor boolean, aluno aprovado, se ele reprovou, eu coloco false. vai muito alem de true ou false (valor lógico)
 
 
+//se quiser ver o tipo ->
+
+console.log(typeof nome, nome)
