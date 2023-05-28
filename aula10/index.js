@@ -5,8 +5,7 @@
 -> - / * **
 -> %  (não é porcentagem e sim o resto da divisão)
 */
-let contador = 1;
-
-
-console.log (++contador);
-console.log(contador)
+const num1 = 10
+const num2 = parseInt('30');
+console.log (num1 + num2);
+console.log (typeof num2 );
