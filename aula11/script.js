@@ -1,7 +1,11 @@
 
-//exercicio
+//exercicio feito por mim
 
-const  num1 = prompt ('digite o primeiro numero:');
-const num2 = prompt ('digite o segundo numero');
-const result = Number(num1) + Number(num2);
-alert (result)
+
+let num1 = prompt ('digite um numero');
+let num2 = prompt ('digite outro numero');
+num1 = Number (num1);
+num2 = Number (num2);
+
+
+alert (`o resultado é ${num1+num2}`)
