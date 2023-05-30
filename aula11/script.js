@@ -1,11 +1,10 @@
 
 //exercicio feito por mim
 
+let num1 = prompt('digite um valor');
+let num2 = prompt('digite outro');
 
-let num1 = prompt ('digite um numero');
-let num2 = prompt ('digite outro numero');
 num1 = Number (num1);
 num2 = Number (num2);
-
-
-alert (`o resultado é ${num1+num2}`)
+const result = num1 + num2
+alert (`o resultado da soma dos dois valores digitado é: ${result}`);
