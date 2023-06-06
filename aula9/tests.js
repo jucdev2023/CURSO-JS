@@ -1,24 +1,20 @@
  
 
 
-
 /* 
+operador de incremento, ele pode ser tanto pós como pré, porem existe uma diferença.
 
+ diferença de pós e pré incremento
+ pré - ele primeiro incrementa o valor e depois retorna o valor incrementado
 
-operadores aritméticos, de atribuição e incremento
-operadores são -> + - * / ** % 
+ operador de incremento: ++
+ operador de decremento: --
 
-
-** = potenciação
-% =  resto da divisão (não é potenciação)
------------------------------------------------------------
-ordem de precendencia
-
-
+ incremento de mais de um valor -> 
 */
 
-const num1 = 2;
-const num2 = 4;
-const num3 = 15;
-console.log ((num1 + num2) * num3);
 
+
+let contador = 50;
+contador += 50; // contador  = contador (50) + 50
+console.log (contador)
