@@ -5,21 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercicio aula 13</title>
+    <style>
+        body {
+            background-color: orange;
+        }
+    </style>
 </head>
 <body>
+
     
 
+
     <script>
+        
         const nome = prompt ('digite seu nome completo:')
-        document.body.innerHTML += `o seu nome é ${nome} <br />`
-        document.body.innerHTML += `seu nome tem  ${nome.length} letras <br />`
-        document.body.innerHTML += `A segunda letra do seu nome é: ${nome.charAt(2)} <br />`
-        document.body.innerHTML += `Qual o primeiro índice da letra J  no seu nome? ${nome.indexOf(nome)}<br />`
-        document.body.innerHTML += `Qual o ultimo índice da letra a no seu nome?<br />`
-        document.body.innerHTML += `As últimas 3 letras do seu nome são:<br />`
-        document.body.innerHTML += `As palavras di seu nome são: <br />`
-        document.body.innerHTML += `Seu nome com letras maiúsculas: <br />`
-        document.body.innerHTML += `Seu nome com letras minúscula: <br />`
+        document.body.innerHTML += `O seu nome é ${nome} <br />`
+        document.body.innerHTML += ` Seu nome tem ${nome.length} letras  <br />`
+        document.body.innerHTML += ` A segunda letra do seu nome é  ${nome.charAt(1)} <br />`
+        document.body.innerHTML += ` Qual é o primeiro índice da letra N no seu nome?  ${nome.lastIndexOf('n')} <br />`
+        document.body.innerHTML += ` Qual é o ultimo índice da letra N no seu nome?  ${nome.indexOf('n')} <br />`
+        document.body.innerHTML += ` as utlimas 3 letras do seu nome é ${nome.slice( -3)} <br />`
+        document.body.innerHTML += ` as palavras do seu nome são : ${nome.split(" ")} <br />`
+        document.body.innerHTML += `seu nome em maiusculo é ${nome.toUpperCase(nome)}<br />`
+        document.body.innerHTML += `seu nome em minusculo é ${nome.toLowerCase(nome)}<br />`
+        
 
     </script>
 </body>
