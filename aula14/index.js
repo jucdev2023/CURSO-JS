@@ -33,6 +33,8 @@ console.log(Number.isInteger(num1))
 //console.log(Number.isNaN(num1)) = se essa conta for um NaN ele vai me retornar um true
    //let temp = num1 + '5'; = não faça conta com string
 
+   //console.log(Number.isInteger(num1)) = é um método em JavaScript que verifica se um valor é um número inteiro. Ele retorna true
+
 
 
 /* 
