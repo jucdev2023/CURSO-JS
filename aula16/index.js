@@ -3,8 +3,8 @@
                //0       1        2
 const alunos = ['João', 'Maria', 'Felipe']; // aqui também temos a 'luiza e Eduardo'
 
-console.log(typeof alunos)
-console.log (alunos instanceof Array)
+console.log(typeof alunos);
+console.log (alunos instanceof Array);
 
 
 
