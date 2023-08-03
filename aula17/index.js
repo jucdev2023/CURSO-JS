@@ -1,8 +1,8 @@
-function saudaçao (nome) {
-console.log(`crush... ${nome}`) // mostrará a mensagem bom dia + o dados que está dentro de saudação
-return 1234567
-
+function saudaçao() {
+    const nomes = ['Amado', 'Felipe', 'Gabriela']
+   return nomes  //* tudo que ta abaixo do return nao será executado
 
 }
-const variavel = saudaçao('bom dia');
-console.log(variavel);
+console.log( saudaçao())
+
+

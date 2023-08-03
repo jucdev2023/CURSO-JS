@@ -24,7 +24,7 @@ const idade02 = 50
 */
 
 //quando eu preciso criar um objeto, eu uso as chaves
-// eu posso criar atributor para essa pessoa1
+// eu posso criar atributo para essa pessoa1
 
 /* const  pessoa1  = {
    nome: 'luiz',
