@@ -1,5 +1,3 @@
-
-
 //* vamos precisar manipular o botão enviar, para que ele não envie o formulário
 //* tudo que ocorre no navegador é considerado um evento
 
@@ -9,11 +7,8 @@
 
 //* tudo que estiver dentro do escopo da minha função vai estar protegido do escopo global
 
-
-
 //* o que precisamos nesse momento é não atualizar a página
 //* primeira coisa que vamos fazer é selecionar o nosso formulário, atrabés da classe que colocamos la no html.
-
 
 /* //EXPLICANDO O CÓDIGO
 
@@ -35,7 +30,7 @@ const form = document.querySelector('.form') //* selecionando a classe form, la 
         
     } 
 
-
+//* sempre que você usa o sinal de igual, precisamos terminar com ponto e virgula. ;
     
 */
 
@@ -55,44 +50,23 @@ const form = document.querySelector('.form') //* selecionando a classe form, la 
 meuEscopo();
 */
 
-
-
-//* sempre que você usa o sinal de igual, precisamos terminar com ponto e virgula. ;
-
 function meuEscopo() {
-    const form = document.querySelector('.form');
-    const resultado = document.querySelector('.resultado');
-   
-   
-   
+  const form = document.querySelector(".form");
+  const resultado = document.querySelector(".resultado");
 
-    const pessoas = [];
-    
+  const pessoas = [];
 
-    
-    
-    
-    
+  function recebeEventoForm(evento) {
+    evento.preventDefault();
 
+    const nome = form.querySelector(".nome"); //* buscando coisas que estao dentro do form
+    const sobrenome = form.querySelector(".sobrenome");
+    const peso = form.querySelector(".peso");
+    const altura = form.querySelector(".altura");
 
-
-    
-    
-    function recebeEventoForm(evento) {
-        
-
-        evento.preventDefault();
-        
-        const nome = form.querySelector('.nome');   //* buscando coisas que estao dentro do form
-        const sobrenome = form.querySelector('.sobrenome');
-        const peso = form.querySelector('.peso');
-        const altura = form.querySelector('.altura');
-       
-
-       
-
-        pessoas.push({ //* pegamos o array pessoas, e para adicionar coisas em um array é preciso colocar .push, fizemos o seguinte ->
-            /*
+    pessoas.push({
+      //* pegamos o array pessoas, e para adicionar coisas em um array é preciso colocar .push, fizemos o seguinte ->
+      /*
                pessoas. push () e dentro do array colocamos os objetos
                nome:
                sobrenome:
@@ -109,43 +83,18 @@ function meuEscopo() {
 
 
             */
-            nome: nome.value,
-            sobrenome: sobrenome.value,
-            peso: peso.value,
-            altura: altura.value
+      nome: nome.value,
+      sobrenome: sobrenome.value,
+      peso: peso.value,
+      altura: altura.value,
+    });
 
-
-        })
-
-        
-        console.log(pessoas)
-        resultado.innerHTML += `<P>${nome.value} </P>` //* colocando oque foi digitado dentro do input no documento html, esses valores foram armazenado na variavel resultado
-        resultado.innerHTML += `<br>${sobrenome.value} </P>`
-        resultado.innerHTML += `<br>${peso.value} </P>`
-        resultado.innerHTML += `<br>${altura.value} </P>`
-       
-
-
-
-        
-      
-
-      
-      
-
-      
-        
-
-    
-        
-
-       
-        
-       
-        
-    
-        
-    };
-    form.addEventListener('submit', recebeEventoForm); 
+    console.log(pessoas);
+    resultado.innerHTML += `<P>${nome.value} </P>`; //* colocando oque foi digitado dentro do input no documento html, esses valores foram armazenado na variavel resultado e mostrado la na div com a class resultado
+    resultado.innerHTML += `<br>${sobrenome.value} </P>`;
+    resultado.innerHTML += `<br>${peso.value} </P>`;
+    resultado.innerHTML += `<br>${altura.value} </P>`;
+  }
+  form.addEventListener("submit", recebeEventoForm);
 }
 meuEscopo();
